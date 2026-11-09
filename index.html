@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ночь в музее</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="event-title"></h1>
+        <p id="event-date"></p>
+        <p id="event-place"></p>
+        <p id="event-description"></p>
+
+        <button id="show-program">Показать программу</button>
+        <div id="program" hidden></div>
+
+        <form id="service-form" hidden>
+            <h3>Дополнительные услуги:</h3>
+            <label>
+                <input type="checkbox" id="guide"> Экскурсия с гидом
+            </label>
+            <label>
+                <input type="checkbox" id="audio"> Аудиогид
+            </label>
+            <label>
+                <input type="checkbox" id="catalog"> Каталог выставки
+            </label>
+            <button type="submit">Рассчитать</button>
+        </form>
+
+        <p id="choice-error" hidden>Выберите хотя бы одну услугу.</p>
+        <p id="data-error" hidden>Ошибка данных.</p>
+
+        <div id="result" hidden></div>
+        <div id="report-json" hidden></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
